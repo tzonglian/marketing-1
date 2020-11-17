@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #29282C;
+}
+
+/* Removes default browser button styles */
+input, button, submit { border:none; }
+
+/* SITE COMPONENTS
+   ================================================ */
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  /* background-color: #151515; */
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+}
+.logo span {
+  color: #CA1F3D;
+}
+
+nav a {
+  color: #CA1F3D;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* HEADER/MAIN CONTENT */
+header {
+  padding: 24px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-gap: 2%;
+  align-items: center;
+  margin-top: 12%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  letter-spacing: 0.36px;
+  color: #f7f7f7;
+}
+
+p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+  color: #f7f7f7;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+button {
+  font-weight: bold;
+  font-size: 27.4012px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.448383px;
+  background: #CA1F3D;
+  border-radius: 124.551px;
+  color: #f7f7f7;
+  padding: 10px 24px;
+  margin-top: 16px;
+}
+
+img {
+  max-width: 680px;
+  width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE
+   ================================================ */
+  @media (max-width: 768px) { 
+    header {
+      grid-template-columns: 1fr;
+      grid-row: reverse;
+    }
+    h1 { 
+      display: none 
+    }
+    img {
+      grid-row: 1;
+    }
+    p {
+      text-align: center;
+    }
+    div {
+      display: grid;
+      place-items: center;
+    }
+    button {
+      margin-top: 12%;
+    }
+
+  }
+
+  @media (max-width: 900px) { 
+    h1 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+  }
