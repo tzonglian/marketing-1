@@ -11,6 +11,9 @@ body {
   background-color: #29282C;
 }
 
+/* Removes default browser button styles */
+input, button, submit { border:none; }
+
 /* SITE COMPONENTS
    ================================================ */
 
@@ -37,3 +40,42 @@ nav a {
   text-decoration: none;
 }
 
+/* HEADER/MAIN CONTENT */
+header {
+  padding: 24px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  letter-spacing: 0.36px;
+  color: #f7f7f7;
+}
+
+p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+  color: #f7f7f7;
+}
+
+button {
+  font-weight: bold;
+  font-size: 27.4012px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.448383px;
+  background: #CA1F3D;
+  border-radius: 124.551px;
+  color: #f7f7f7;
+  padding: 10px 24px;
+}
+
+img {
+  max-width: 680px;
+}
