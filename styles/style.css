@@ -118,12 +118,34 @@ button {
 
   }
 
+  @media (max-width: 1000px) { 
+    .team-cards-container {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  
+  }
+
   @media (max-width: 900px) { 
     h1 {
       font-size: 72px;
       line-height: 80px;
     }
   }
+
+  @media (max-width: 700px) { 
+    h1 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+    .team-cards-container {
+      grid-template-columns: 1fr !important;
+    }
+    .team-section h2 {
+      text-align: center !important;
+    }
+  }
+
+
 
 
 /* ABOUT PAGE
