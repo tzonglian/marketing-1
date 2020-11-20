@@ -225,3 +225,18 @@ button {
   .meet-the-team {
     color: #fff;
   }
+
+  .careers-button {
+    font-size: 18px;
+  }
+
+  .careers-section {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 12%;
+    margin-top: 8%;
+  }
+
+  .careers-section h2 {
+    text-align: center;
+  }
