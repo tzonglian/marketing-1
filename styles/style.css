@@ -23,14 +23,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 24px 8%;
-  /* background-color: #151515; */
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 .logo {
+  text-align: center;
+}
+.logo a {
   color: #fff;
   font-weight: 700;
 }
-.logo span {
+.logo a span {
   color: #CA1F3D;
 }
 
@@ -48,7 +52,10 @@ header {
   grid-template-rows: 2fr;
   grid-gap: 2%;
   align-items: center;
-  margin-top: 12%;
+  padding-top: 12%;
+
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -82,7 +89,7 @@ button {
   margin-top: 16px;
 }
 
-img {
+.workout {
   max-width: 680px;
   width: 100%;
   height: auto;
@@ -98,7 +105,7 @@ img {
     h1 { 
       display: none 
     }
-    img {
+    .workout {
       grid-row: 1;
     }
     p {
@@ -112,6 +119,15 @@ img {
       margin-top: 12%;
     }
 
+    .header-img {
+      grid-row: 4;
+    }
+  }
+
+  @media (max-width: 1000px) { 
+    .team-cards-container {
+      grid-template-columns: 1fr 1fr !important;
+    }
   }
 
   @media (max-width: 900px) { 
@@ -119,4 +135,108 @@ img {
       font-size: 72px;
       line-height: 80px;
     }
+  }
+
+  @media (max-width: 700px) { 
+    h1 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+    .team-cards-container {
+      grid-template-columns: 1fr !important;
+    }
+    .team-section h2 {
+      text-align: center !important;
+    }
+  }
+
+
+/* ABOUT PAGE
+  ================================================ */
+
+  section {
+    padding: 24px 8%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .intro-section {
+    display: grid;
+    justify-items: center;
+    margin-top: 3%;
+  }
+
+  h2 {
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    background: #CA1F3D;
+    height: 4px;
+    width: 140px;
+    border: none;
+    margin-top: 1.6rem;
+  }
+
+  .header-img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin-top: 4rem;
+    border-radius: 16px;
+  }
+
+  .team-section {
+    display: grid;
+    justify-items: center;
+    margin-top: 42px;
+  }
+  
+  .team-section p {
+    margin-bottom: 48px;
+  }
+
+  .team-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+
+  .team-card h4 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .team-card p {
+    color: #CA1F3D;
+  }
+
+  .meet-the-team {
+    color: #fff;
+  }
+
+  .careers-button {
+    font-size: 18px;
+  }
+
+  .careers-section {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 12%;
+    margin-top: 8%;
+  }
+
+  .careers-section h2 {
+    text-align: center;
   }
