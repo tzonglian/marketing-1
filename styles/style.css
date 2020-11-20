@@ -23,14 +23,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 24px 8%;
-  /* background-color: #151515; */
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 .logo {
+  text-align: center;
+}
+.logo a {
   color: #fff;
   font-weight: 700;
 }
-.logo span {
+.logo a span {
   color: #CA1F3D;
 }
 
@@ -48,7 +52,10 @@ header {
   grid-template-rows: 2fr;
   grid-gap: 2%;
   align-items: center;
-  margin-top: 12%;
+  padding-top: 12%;
+
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -115,14 +122,12 @@ button {
     .header-img {
       grid-row: 4;
     }
-
   }
 
   @media (max-width: 1000px) { 
     .team-cards-container {
       grid-template-columns: 1fr 1fr !important;
     }
-  
   }
 
   @media (max-width: 900px) { 
@@ -146,8 +151,6 @@ button {
   }
 
 
-
-
 /* ABOUT PAGE
   ================================================ */
 
@@ -159,6 +162,7 @@ button {
   .intro-section {
     display: grid;
     justify-items: center;
+    margin-top: 3%;
   }
 
   h2 {
@@ -188,7 +192,7 @@ button {
   .team-section {
     display: grid;
     justify-items: center;
-    margin-top: 28px;
+    margin-top: 42px;
   }
   
   .team-section p {
@@ -216,4 +220,8 @@ button {
   }
   .team-card p {
     color: #CA1F3D;
+  }
+
+  .meet-the-team {
+    color: #fff;
   }
